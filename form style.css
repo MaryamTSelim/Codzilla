@@ -1,0 +1,77 @@
+*{
+	z-index:5;
+}
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav{
+	width: 80%;
+}
+section.cover-image{
+	background-image: url("./Images/Aside\ Card\ 2.jpg");
+	margin:0px;
+	top: 0;
+	position: fixed;
+	z-index: -1;
+}
+.form-container{
+	position: relative;
+	padding: 20px;
+	
+}
+.form-container h2{
+	padding: 20px;
+	color: whitesmoke;
+	text-align:center;
+	z-index: 20;
+	font-size: 1.8rem;
+}
+form.login{
+	width: 50%;
+	margin:auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	height: 60%;
+}
+form.login label{
+	color: whitesmoke;
+	font-size: 1.4rem;
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+form.login input{
+	background: none;
+	border: none;
+	border-bottom:1px solid whitesmoke ;
+	color: whitesmoke;
+	font-size: 1.8rem;
+	font-weight: 200;
+	margin-bottom: 30px;
+	padding: 5px 0px;
+}
+form.login input:focus{
+	border: none;
+	outline: none;
+}
+form.login input[type="submit"]{
+	background-color: cornflowerblue;
+	border: none;
+	width: fit-content;
+	align-self: center;
+	padding: 5px 20px;
+	border-radius: 1.5rem;
+	font-size: 1.4rem;
+}
+
+.note{
+	color: whitesmoke;
+	width: fit-content;
+	margin: auto;
+	font-size:1rem
+}
+.note a{
+	color:cornflowerblue
+}

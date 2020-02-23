@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	z-index:1;
+}
+a{
+	color:black;
+	text-decoration: none;
+}
+button{
+	background-color: rgb(53, 53, 53);
+	border: none;
+	border-radius: 1rem;
+	color: whitesmoke;
+	padding:5px 15px;
+	margin:10px auto;
+	display: block;
+	transition: all 0.3s linear;
+}
+button:hover{
+	background-color: rgb(236, 236, 236);
+	color: black;
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	font-size:62.5%;
+	min-height: auto;
+}
+
+header{
+	padding: 5px 0px;
+	background-color: whitesmoke;
+	border-bottom: 1px solid lightgray;	
+}
+header h1{
+	width: fit-content;
+	margin:auto;
+	font-family: 'Kaushan Script';
+	font-size: 3rem;
+}
+nav{
+	position: sticky;
+	top:0;
+	padding: 0px 80px;
+	background-color: whitesmoke;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size:1rem;
+	z-index: 5;
+}
+
+section.cover-image{
+	background-image: url("./Images/Cover.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:100%;
+	width:100%;
+	position: absolute;
+	margin-bottom: 50px;
+}
+div.cover-image-filter{
+	background-color: rgba(0, 0, 0, 0.623);
+	height:100%;
+	width:100%;
+	position: absolute;
+}
+section.motto{
+	color: whitesmoke;
+	margin:auto;
+	font-family: 'Kaushan Script';
+	font-size: 3rem;
+	position: relative;
+	top:40vh;
+	width: fit-content;
+	
+	
+}
+section.main{
+	display:inline-block;
+	width:65%;
+	margin-right:1%;
+	vertical-align: top;	
+}
+article{
+	padding: 10px;
+}
+.article-header{
+	margin: auto;
+	width: fit-content;
+	
+} 
+.article-header h2{
+	width: fit-content;
+	margin: 0px 20px;
+	text-transform: capitalize;
+	display: inline-block;
+	font-size: 1.4rem;
+	font-weight: 300;
+	
+}
+.article-header::before , .article-header::after{
+	content: "";
+	padding: 1px 50px;
+	background-color: black;
+	display: inline-block;
+}
+.article-cover img{
+	width:70%;
+	display: block;
+	margin:10px auto;
+	
+}
+.article-body{
+	font-size: 1rem;
+	padding: 20px;
+	text-align: center;
+	line-height: 1.5rem;
+}
+aside{
+	display:inline-block;
+	width:33%;
+	vertical-align: top;
+}
+.aside-card{
+	margin: 30px 10px 50px 10px;
+	border: 1px solid lightgray;
+	padding: 20px 5px;
+}
+.aside-card-header{
+	width: fit-content;
+	margin: auto;
+}
+.aside-card-header h2{
+	width: fit-content;
+	margin: 0px 12px 10px 12px;
+	text-transform: capitalize;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 300;
+	vertical-align: middle;
+	
+}
+.aside-card-header::before , .aside-card-header::after{
+	content: "";
+	padding: 1px 40px;
+	background-color: black;
+	display: inline-block;
+	vertical-align: middle;
+}
+.aside-card-cover{
+	border:1px solid transparent;
+	overflow: hidden;
+	width:80%;
+	margin: auto;
+	
+}
+.aside-card-cover img{
+	width:100%;
+	display: block;
+	margin:10px auto;
+	transition: transform 0.2s linear;
+}
+
+.aside-card-cover:hover img{
+	transform: scale(1.1);
+}
+.aside-card-body{
+	font-size: 0.9rem;
+	padding: 0px 15px;
+	width: 90%;
+	margin: auto;
+}
+.drop-down-header{
+	padding: 20px 20px;
+	position: relative;
+}
+.drop-down-list{
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.8s linear;
+	position: absolute;
+	background-color: whitesmoke;
+}
+.drop-down-item{
+	padding:10px 50px;
+	transition: all 0.2s linear;
+}
+.drop-down-container:hover .drop-down-list{
+	max-height: 500px;
+	cursor: pointer;
+}
+.drop-down-item:hover{
+	background-color: rgb(53, 53, 53);
+	color: whitesmoke;
+}
+div.drop-down-header i{
+	padding:0px 15px;
+}
+.flow-resume{
+	height: 110vh;
+	width: 100%;
+}
+.article-card{
+	width: 47%;
+	display: inline-block;
+	margin: 30px 10px 50px 10px;
+	padding: 20px 5px;
+}
+.article-card-header{
+	width: fit-content;
+	margin: auto;
+}
+.article-card-header h2{
+	width: fit-content;
+	margin: 0px 12px 10px 12px;
+	text-transform: capitalize;
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 300;
+	vertical-align: middle;
+	
+}
+.article-card-header::before , .article-card-header::after{
+	content: "";
+	padding: 1px 40px;
+	background-color: black;
+	display: inline-block;
+	vertical-align: middle;
+}
+.article-card-cover{
+	border:1px solid transparent;
+	overflow: hidden;
+	width:80%;
+	margin: auto;
+	
+}
+.article-card-cover img{
+	width:100%;
+	display: block;
+	margin:10px auto;
+	transition: transform 0.2s linear;
+}
+
+.article-card-cover:hover img{
+	transform: scale(1.1);
+}
+.article-card-body{
+	font-size: 0.9rem;
+	padding: 0px 15px;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
